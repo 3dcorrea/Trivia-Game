@@ -1,8 +1,10 @@
-#body {
-    background: url(assets\images\Cage.jpg);
+.html {
     font-family: Arial, Helvetica, sans-serif;
 }
+#body{
+    background-image: url(assets\css\images\Cage.jpg);
 
+}
 #logo {
     font-size: 100px;
 
