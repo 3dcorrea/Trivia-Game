@@ -1,10 +1,8 @@
-.html {
-    font-family: Arial, Helvetica, sans-serif;
+#body {
+    background-image: url(assets\images\Screenshot_116.png);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-#body{
-    background-image: url(assets\css\images\Cage.jpg);
 
-}
 #logo {
     font-size: 100px;
 
