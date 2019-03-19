@@ -1,5 +1,5 @@
-#body {
-    background-image: url(assets\images\Screenshot_116.png);
+.html {
+    background: url('assets\css\images\Shaggy.png') cover no-repeat;;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
