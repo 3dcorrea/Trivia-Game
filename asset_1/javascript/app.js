@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(document).ready(function () {
 
   // start the game when user clicks on Start button
   $("#start-button").on("click", gameState.startTimer);
@@ -9,10 +9,10 @@ $(document).ready(function(){
 var gameState = {
 
   // set the time at 60 seconds, and count down by 1 second
-  timeRemaining : 60,
+  timeRemaining: 60,
 
   // start the timer, hide the start page, show the questions
-  startTimer: function() {
+  startTimer: function () {
     $("#timer").text("Time remaining: " + gameState.timeRemaining);
     setInterval(gameState.countdown, 1000);
     $("#start-page").hide();
@@ -20,7 +20,7 @@ var gameState = {
   },
 
   // decrement the timer and update the UI; stop the timer at 0
-  countdown: function() {
+  countdown: function () {
     gameState.timeRemaining--;
     $("#timer").text("Time remaining: " + gameState.timeRemaining);
     if (gameState.timeRemaining === 0) {
@@ -30,20 +30,20 @@ var gameState = {
   },
 
   // stop the timer and check the answers
-  stopTimer: function() {
+  stopTimer: function () {
     clearInterval();
     trivia.checkAnswers();
   },
 
   // hide the quetions and display the end page with results
-  showEndPage: function(numCorrect, numIncorrect, numUnanswered) {
+  showEndPage: function (numCorrect, numIncorrect, numUnanswered) {
     $("#end-page").show();
     $("#questions-box").empty();
     $("#timer").empty();
     $("#timer").hide();
-    $("#correct-answers").text("Correct answers (Gigady-Gigady!!!): " + numCorrect);
-    $("#incorrect-answers").text("Incorrect answers (Ohhh-Noooo!!!): " + numIncorrect);
-    $("#unanswered").text("Skipped questions (Ngheaa!!!): " + numUnanswered);
+    $("#correct-answers").text("Correct answers (Winner Winner Chicken Dinner!!!): " + numCorrect);
+    $("#incorrect-answers").text("Incorrect answers (Wrongo!!!): " + numIncorrect);
+    $("#unanswered").text("Skipped questions (You aint slick, you jive turkey!!!): " + numUnanswered);
   }
 }
 
@@ -51,7 +51,7 @@ var gameState = {
 var trivia = {
 
   // pull questions from the array of questions, loop through them, and append to UI
-  displayQuestions: function() {
+  displayQuestions: function () {
     var divContainer = $("#questions-box");
     var answerGroup = $(".form-check");
     divContainer.append('<h2>Answer the following questions:</h2>');
@@ -64,9 +64,9 @@ var trivia = {
       var answer2 = questionBank[i].answers[1];
       var answer3 = questionBank[i].answers[2];
 
-      divContainer.append('<div class="form-check"><input class="form-check-input" type="radio" name="radio-group'+i+'" id="radio'+i+'"><label class="form-check-label" id="radio'+i+'label" for="radio'+i+'">' + answer1 + '</label></div>');
-      divContainer.append('<div class="form-check"><input class="form-check-input" type="radio" name="radio-group'+i+'" id="radio'+i+'"><label class="form-check-label" id="radio'+i+'label" for="radio'+i+'">' + answer2 + '</label></div>');
-      divContainer.append('<div class="form-check"><input class="form-check-input" type="radio" name="radio-group'+i+'" id="radio'+i+'"><label class="form-check-label" id="radio'+i+'label" for="radio'+i+'">' + answer3 + '</label></div>');
+      divContainer.append('<div class="form-check"><input class="form-check-input" type="radio" name="radio-group' + i + '" id="radio' + i + '"><label class="form-check-label" id="radio' + i + 'label" for="radio' + i + '">' + answer1 + '</label></div>');
+      divContainer.append('<div class="form-check"><input class="form-check-input" type="radio" name="radio-group' + i + '" id="radio' + i + '"><label class="form-check-label" id="radio' + i + 'label" for="radio' + i + '">' + answer2 + '</label></div>');
+      divContainer.append('<div class="form-check"><input class="form-check-input" type="radio" name="radio-group' + i + '" id="radio' + i + '"><label class="form-check-label" id="radio' + i + 'label" for="radio' + i + '">' + answer3 + '</label></div>');
     }
 
     // add a Done button to the end of the page and register its click handler
@@ -76,7 +76,7 @@ var trivia = {
   },
 
   // test if the user answers are correct, incorrect, or if there are unanswered questions
-  checkAnswers: function() {
+  checkAnswers: function () {
     var correctAnswer;
     var userAnswer;
     var numCorrect = 0;
@@ -87,7 +87,7 @@ var trivia = {
     // increment score counts appropriately
     for (var i = 0; i < questionBank.length; i++) {
       correctAnswer = questionBank[i].correct;
-      userAnswer = $('input[id=radio'+i+']:checked + label').text();
+      userAnswer = $('input[id=radio' + i + ']:checked + label').text();
 
       if (userAnswer === correctAnswer) {
         numCorrect++;
@@ -106,16 +106,14 @@ var trivia = {
 }
 
 // array of objects with the questions, possible answers, and the correct answer
-var questionBank =
-[
-  {
+var questionBank = [{
     question: "Who is Stewie's best friend?",
     answers: ["Peter", "Louis", "Brian"],
     correct: "Brian"
   },
 
   {
-    question : "What is the name of the junior high school in Quahog?",
+    question: "What is the name of the junior high school in Quahog?",
     answers: ["Quahog Junior High School", "Hogwarts Junior High School", "Buddy Cianci Junior High School"],
     correct: "Buddy Cianci Junior High School"
 
@@ -134,37 +132,37 @@ var questionBank =
   },
   {
     question: "What is the name of Peter's black relative who was an actor in Black To The Future?",
-    answers: ["Paul Griffin","James Griffin","Rufus Griffin"],
+    answers: ["Paul Griffin", "James Griffin", "Rufus Griffin"],
     correct: "Rufus Griffin"
 
   },
   {
     question: "What is the name of the robot from the show Transformers that is Jewish?",
-    answers: ["Optimus Prime","Bumble Bee", "Mega Bot"],
+    answers: ["Optimus Prime", "Bumble Bee", "Mega Bot"],
     correct: "Optimus Prime"
 
   },
   {
     question: "What American Football Team Did Peter once played for?",
-    answers: ["Denver Broncos","Quahog Titans","New England Patriots"],
+    answers: ["Denver Broncos", "Quahog Titans", "New England Patriots"],
     correct: "New England Patriots"
 
   },
   {
     question: "According to Meg, what can't she taste?",
-    answers: ["food","her own saliva","salt"],
+    answers: ["food", "her own saliva", "salt"],
     correct: "salt"
 
   },
   {
     question: "What was Peter Griffin's news segment?",
-    answers: ["The Peter Griffin Show","Grind My Gears","What About Sports"],
+    answers: ["The Peter Griffin Show", "Grind My Gears", "What About Sports"],
     correct: "Grind My Gears"
 
   },
   {
     question: "What is peter griffin's sister name?",
-    answers: ["Karen Griffin","Christie Griffin","Kate Griffin"],
+    answers: ["Karen Griffin", "Christie Griffin", "Kate Griffin"],
     correct: "Karen Griffin"
 
   }
