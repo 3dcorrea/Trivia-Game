@@ -140,7 +140,7 @@ var questionBank = [{
   },
   {
     question: "In China, animals are forbidden to use human language. This belief led to the ban of a book of which famous writer, in the country?",
-    answers: ["E.L. James,\"50 Shades of Grey\"", "Miguel de Cervantes, \"Don Quixote\"", "Lewis Carroll, \"Alice's Adventures in Wonderland\"", "Vātsyāyana, \"Kama Sutra\""],
+    answers: ["E.L. James, \"50 Shades of Grey\"", "Miguel de Cervantes, \"Don Quixote\"", "Lewis Carroll, \"Alice's Adventures in Wonderland\"", "Vātsyāyana, \"Kama Sutra\""],
     correct: "Lewis Carroll, \"Alice's Adventures in Wonderland\""
   },
   {
