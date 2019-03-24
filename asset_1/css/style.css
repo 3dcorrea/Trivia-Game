@@ -1,5 +1,6 @@
 body {
   background-color: rgb(43, 33, 173);
+  font-size: 24px;
 }
 
 #end-page {
@@ -11,18 +12,25 @@ body {
   padding-bottom: 20px;
   width: 100% \9;
 }
-
+#family-photo{
+  height: 200px;
+  width: 200px;
+}
 h1 {
   margin-bottom: 20px;
 }
 
+h2{
+  font-size: 30px;
+}
+
 label {
-  font-size: 16px;
+  font-size: 26px;
 }
 
 #end-page p {
   font-size: 20px;
-  /* font-weight: 700; */
+  
 }
 
 #correct-answers {
@@ -31,7 +39,7 @@ label {
 
 #question {
   margin-top: 32px;
-  font-size: 20px;
+  font-size: 40px;
   font-weight: 500;
 }
 

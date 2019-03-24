@@ -110,7 +110,7 @@ var trivia = {
 // array of objects with the questions, possible answers, and the correct answer
 var questionBank = [{
     question: "Who is the strongest?",
-    answers: ["Cosmic Armor Superman with a Super Mario \"star\" powerup", "Shaggy at 1% power after a rough night of drinking", "Thanos with Infinity Gauntlet and a \"Reverse\" Uno card", "Mastered Ultra Instinct Gogeta with Rinnegan and a 1st Edition Charizard"],
+    answers: ["Cosmic Armor Superman with a Super Mario \"Star\" powerup", "Shaggy at 1% power after a rough night of drinking", "Thanos with Infinity Gauntlet and a \"Reverse\" Uno card", "Mastered Ultra Instinct Gogeta with Rinnegan and a 1st Edition Charizard"],
     correct: "Shaggy at 1% power after a rough night of drinking"
   },
 
