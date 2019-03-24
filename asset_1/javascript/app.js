@@ -63,6 +63,7 @@ var trivia = {
       var answer1 = questionBank[i].answers[0];
       var answer2 = questionBank[i].answers[1];
       var answer3 = questionBank[i].answers[2];
+      var answer4 = questionBank[i].answers[3];
 
       divContainer.append('<div class="form-check"><input class="form-check-input" type="radio" name="radio-group' + i + '" id="radio' + i + '"><label class="form-check-label" id="radio' + i + 'label" for="radio' + i + '">' + answer1 + '</label></div>');
       divContainer.append('<div class="form-check"><input class="form-check-input" type="radio" name="radio-group' + i + '" id="radio' + i + '"><label class="form-check-label" id="radio' + i + 'label" for="radio' + i + '">' + answer2 + '</label></div>');
