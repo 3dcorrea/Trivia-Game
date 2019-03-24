@@ -14,7 +14,7 @@ body {
 }
 #family-photo{
   height: 200px;
-  width: 200px;
+  width: 100% \9;
 }
 h1 {
   margin-bottom: 20px;
