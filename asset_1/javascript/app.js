@@ -51,7 +51,7 @@ var gameState = {
 var trivia = {
 
   // pull questions from the array of questions, loop through them, and append to UI
-  displayQuestions: function () {
+  displayQuestions: function () {   
     var divContainer = $("#questions-box");
     var answerGroup = $(".form-check");
     divContainer.append('<h2>Answer the following questions:</h2>');
@@ -106,64 +106,46 @@ var trivia = {
 }
 
 // array of objects with the questions, possible answers, and the correct answer
+
+
 var questionBank = [{
-    question: "Who is Stewie's best friend?",
-    answers: ["Peter", "Louis", "Brian"],
-    correct: "Brian"
+  question: "Who is the strongest?",
+  answers: {
+      a: "Cosmic Armor Superman with a Super Mario \"star\" powerup",
+      b: "Shaggy at 1% power after a rough night of drinking",
+      c: "Thanos with Infinity Gauntlet and a \"Reverse\" Uno card",
+      d: "Mastered Ultra Instinct Gogeta with Rinnegan and a 1st Edition Charizard"
   },
-
-  {
-    question: "What is the name of the junior high school in Quahog?",
-    answers: ["Quahog Junior High School", "Hogwarts Junior High School", "Buddy Cianci Junior High School"],
-    correct: "Buddy Cianci Junior High School"
-
+  correctAnswer: "b"
+},
+{
+  question: "What is the greatest website ever created?",
+  answers: {
+      a: "Google.com",
+      b: "W3schools.com",
+      c: "Placecage.com",
+      d: "getbootstrap.com"
   },
-  {
-    question: "What is the name of Stewie's teddy bear?",
-    answers: ["Bobo", "Rupert", "Ted"],
-    correct: "Rupert"
-
+  correctAnswer: "c"
+},
+{
+  question: "Where has Waldo REALLY been all these years?",
+  answers: {
+      a: "At the last Roy Rogers in existence",
+      b: "In rehab",
+      c: "At Starbucks condescendingly sipping an $18 fair trade pour-over, continuously pushing to master out of spite",
+      d: "Looking for Carmen Sandiego"
   },
-  {
-    question: " Which character from Sesame Street was in rehabilitation?",
-    answers: ["Cookie Monster", "Elmo", "Big Bird"],
-    correct: "Cookie Monster"
-
+  correctAnswer: "d"
+},
+{
+  question: "In 1978, Superman teamed up with what well-known persona to defeat an alien invasion?",
+  answers: {
+      a: "Charles Manson",
+      b: "A resurrected Benito Mussolini",
+      c: "Muhammad Ali",
+      d: "Ted Bundy"
   },
-  {
-    question: "What is the name of Peter's black relative who was an actor in Black To The Future?",
-    answers: ["Paul Griffin", "James Griffin", "Rufus Griffin"],
-    correct: "Rufus Griffin"
-
-  },
-  {
-    question: "What is the name of the robot from the show Transformers that is Jewish?",
-    answers: ["Optimus Prime", "Bumble Bee", "Mega Bot"],
-    correct: "Optimus Prime"
-
-  },
-  {
-    question: "What American Football Team Did Peter once played for?",
-    answers: ["Denver Broncos", "Quahog Titans", "New England Patriots"],
-    correct: "New England Patriots"
-
-  },
-  {
-    question: "According to Meg, what can't she taste?",
-    answers: ["food", "her own saliva", "salt"],
-    correct: "salt"
-
-  },
-  {
-    question: "What was Peter Griffin's news segment?",
-    answers: ["The Peter Griffin Show", "Grind My Gears", "What About Sports"],
-    correct: "Grind My Gears"
-
-  },
-  {
-    question: "What is peter griffin's sister name?",
-    answers: ["Karen Griffin", "Christie Griffin", "Kate Griffin"],
-    correct: "Karen Griffin"
-
-  }
-]
+  correctAnswer: "c"
+}
+];
