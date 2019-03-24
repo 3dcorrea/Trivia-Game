@@ -51,7 +51,7 @@ var gameState = {
 var trivia = {
 
   // pull questions from the array of questions, loop through them, and append to UI
-  displayQuestions: function () {   
+  displayQuestions: function () {
     var divContainer = $("#questions-box");
     var answerGroup = $(".form-check");
     divContainer.append('<h2>Answer the following questions:</h2>');
@@ -109,43 +109,43 @@ var trivia = {
 
 
 var questionBank = [{
-  question: "Who is the strongest?",
-  answers: {
+    question: "Who is the strongest?",
+    answers: {
       a: "Cosmic Armor Superman with a Super Mario \"star\" powerup",
       b: "Shaggy at 1% power after a rough night of drinking",
       c: "Thanos with Infinity Gauntlet and a \"Reverse\" Uno card",
       d: "Mastered Ultra Instinct Gogeta with Rinnegan and a 1st Edition Charizard"
+    },
+    correctAnswer: "b"
   },
-  correctAnswer: "b"
-},
-{
-  question: "What is the greatest website ever created?",
-  answers: {
+  {
+    question: "What is the greatest website ever created?",
+    answers: {
       a: "Google.com",
       b: "W3schools.com",
       c: "Placecage.com",
       d: "getbootstrap.com"
+    },
+    correctAnswer: "c"
   },
-  correctAnswer: "c"
-},
-{
-  question: "Where has Waldo REALLY been all these years?",
-  answers: {
+  {
+    question: "Where has Waldo REALLY been all these years?",
+    answers: {
       a: "At the last Roy Rogers in existence",
       b: "In rehab",
       c: "At Starbucks condescendingly sipping an $18 fair trade pour-over, continuously pushing to master out of spite",
       d: "Looking for Carmen Sandiego"
+    },
+    correctAnswer: "d"
   },
-  correctAnswer: "d"
-},
-{
-  question: "In 1978, Superman teamed up with what well-known persona to defeat an alien invasion?",
-  answers: {
+  {
+    question: "In 1978, Superman teamed up with what well-known persona to defeat an alien invasion?",
+    answers: {
       a: "Charles Manson",
       b: "A resurrected Benito Mussolini",
       c: "Muhammad Ali",
       d: "Ted Bundy"
-  },
-  correctAnswer: "c"
-}
+    },
+    correctAnswer: "c"
+  }
 ];
