@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Best Trivia Game in Existence</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="asset_1\css\reset.css">
+  <link rel="stylesheet" type="text/css" href="asset_1\css\style.css">
+</head>
+
+<body>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <img src="asset_1\images\Cage.jpg" class="img-fluid text-center" id="main-logo" alt="THE CAGE">
+          <h1 class="display-3">tRiVia GaMe!!1!</h1>
+          <hr>
+        </div>
+      </div>
+
+    <div class="row">
+      <div class="col-md-3">
+        <img src="asset_1\images\Shaggy.png" class="img-fluid text-center" id="family-photo" alt="Shaggy">
+        <div>
+          <h3 id="timer"></h3>
+        </div>
+      </div>
+
+      <div class="offset-md-1"></div>
+
+    <div class="col-md-8">
+      <div id="start-page" class="start-page-text">
+        <h2>Get ready to play</h2>
+        <p>Test your knowledge of random stuff I made up and/or Googled. You have 60 seconds to answer all the questions and the game ends automatically when your time is up. Good luck!</p>
+        <div class="btn btn-primary" id="start-button">Let's Go!!!
+        </div>
+      </div>
+
+    <div>
+          <div id="questions-box">
+           </div>
+        </div>
+
+    <div class="hidden" id="end-page">
+          <h2>Here's How You Did:</h2>
+          <p id="correct-answers"></p>
+          <p id="incorrect-answers"></p>
+          <p id="unanswered"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container-fluid">
+      <hr>
+      <span class="text-center">
+        <p>&copy; Copyright 2019 Dango the Mango</p>
+        <p id="copyright-small" class="text-muted">Images are property of their respective owners.</p></span>
+      </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="asset_1\javascript\app.js"></script>
+</body>
+</html>
